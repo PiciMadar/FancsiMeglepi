@@ -129,7 +129,7 @@ function bejovo3(){
     SliderJ.max = "10"
     SliderJ.value = "5"
     SliderJ.style.width = "80%"
-    SliderJ.style.height = "100px"
+    SliderJ.style.height = "100%"
     SliderJ.style.outline = "none"
   
     CsuszkaJ.style.display = "block"  

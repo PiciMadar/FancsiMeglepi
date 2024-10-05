@@ -220,8 +220,8 @@ button{
 
 #CsuszkaID::-webkit-slider-thumb{
     -webkit-appearance: none;
-    width: 80px; /* Set a specific slider handle width */
-    height: 140px; /* Slider handle height */
+    width: 7vw; /* Set a specific slider handle width */
+    height: 15vw; /* Slider handle height */
     background: #a5989e; /* Green background */
     cursor: pointer; /* Cursor on hover */
 }
