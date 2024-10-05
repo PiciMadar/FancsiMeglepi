@@ -15,8 +15,6 @@ let UzenetJ = document.getElementById("uziP")
 let CsuszkaJ = document.getElementById("CsuszkaID")
 let DatumJ = document.getElementById("DatumID")
 
-let PopHang = new Audio()
-PopHang.src = "/Hangok/mixkit-electric-pop-2365.wav"
 
 KozepKepJ.style.opacity = "1"
 KozepKepJ.style.transition = "opacity 800ms"
@@ -31,7 +29,7 @@ function Gomb01F(valasz){
                 KozepszovegJ.innerHTML = "Tényleg nem?"
                 Gomb01J.innerHTML = "De!"
                 Gomb02J.innerHTML = "Nem :("
-                KozepKepJ.src = "/Kepek/CecaPuska2.jpg"
+                KozepKepJ.src = "./Kepek/CecaPuska2.jpg"
                 KozepKepJ.style.animation = "Nagyobb 0.5s forwards"
                 fejlecJ.innerHTML = "Mi?"
 
@@ -51,7 +49,7 @@ function Gomb01F(valasz){
                 KozepszovegJ.innerHTML = "Tutii neeem? :("
                 Gomb01J.innerHTML = "Deee!!"
                 Gomb02J.innerHTML = "Tutiiii"
-                KozepKepJ.src = "/Kepek/CecaSzomoru.jpg"
+                KozepKepJ.src = "./Kepek/CecaSzomoru.jpg"
                 KozepKepJ.style.animation = "Nagyobb2 0.5s forwards"
                 fejlecJ.innerHTML = ":("
 
@@ -70,7 +68,7 @@ function Gomb01F(valasz){
                 KozepszovegJ.innerHTML = "Ne hazudj!"
                 Gomb01J.innerHTML = "hehehe"
                 Gomb02J.style.display = "none"
-                KozepKepJ.src = "/Kepek/CecaKiabal.jpg"
+                KozepKepJ.src = "./Kepek/CecaKiabal.jpg"
                 KozepKepJ.style.animation = "Nagyobb 0.5s forwards"
                 fejlecJ.innerHTML = "Naa"
 
@@ -94,7 +92,7 @@ function Gomb01F(valasz){
 function Szius(){
     KozepszovegJ.style.fontSize = "10vw"
     KozepszovegJ.style.transition = "0s"
-    KozepKepJ.src = "/Kepek/CecaHappy.jpg"
+    KozepKepJ.src = "./Kepek/CecaHappy.jpg"
     KozepKepJ.style.animation = "Entry 0.2s forwards"
     Gomb01J.style.display = "none"
     Gomb02J.style.display = "none"
@@ -143,7 +141,6 @@ let szomivisszafizetes
 
 function Gomb02F(){
     boldogsag = CsuszkaJ.value
-    alert(boldogsag)
     CsuszkaJ.style.display = "none"
     szomivisszafizetes = Math.round((100 - boldogsag) / 10)
     Alszoveg0J.style.display = "none"
@@ -173,7 +170,7 @@ function Gomb02F(){
 
 let MindenesLista =
 [
-    ["/Kepek/CecaSzomoru.jpg","/Kepek/CecaSzomoru1.jpg","/Kepek/CecaDiss.png","/Kepek/CecaHappy1.jpg","/Kepek/CecaSUPERhappy.jpg"],
+    ["./Kepek/CecaSzomoru.jpg","./Kepek/CecaSzomoru1.jpg","./Kepek/CecaDiss.png","./Kepek/CecaHappy1.jpg","./Kepek/CecaSUPERhappy.jpg"],
     ["Micsudiii?!?","Tesssék?","Hááát","Ezaz","Yipppee"],
     ["Csak ennyiii?","Ilyen szomiság?","Lehetne jobb is!","Ez már valami","♥ Ennek örülök ♥"]
 ]
@@ -209,7 +206,7 @@ function Olelo(){
     KozepKepJ.style.animation = "slide2"
     KozepKepJ.style.borderWidth = "0px"
     KozepKepJ.style.borderStyle = "none"
-    KozepKepJ.src= "/Kepek/jumping-gatito.gif"
+    KozepKepJ.src= "./Kepek/jumping-gatito.gif"
     Olelocica = true;
     delay(2000).then(() => OleloSzovegBeusz());
 }
@@ -278,7 +275,7 @@ function DatumMegados(){
     fejlecJ.innerHTML = "Remélem boldog vagy"  
     KozepszovegJ.innerHTML = "Hiszen tudod milyen nap van ma?"
     KozepszovegJ.style.animation = "Entry2 1s forwards"
-    KozepKepJ.src = "/Kepek/CecaParty.gif"
+    KozepKepJ.src = "./Kepek/CecaParty.gif"
     KozepKepJ.style.borderWidth = "2px"
     KozepKepJ.style.borderStyle = "solid"
 
@@ -292,7 +289,6 @@ function DatumMegados(){
 
 function Gomb03F(){
     let DatumValasz =  DatumJ.value.toLowerCase()
-    alert(DatumValasz)
     switch(DatumValasz){
         case "szulinap":
             Szulnap(0)
@@ -391,19 +387,19 @@ function Szulnap(eredmeny){
     if(eredmeny == 0)
     {
         fejlecJ.innerHTML = "Pontosaaaaan"
-        KozepKepJ.src = "/Kepek/CecaSUPERhappy.jpg"
+        KozepKepJ.src = "./Kepek/CecaSUPERhappy.jpg"
         KozepszovegJ.innerHTML = "hihihihi"
     }
     else if(eredmeny == 1)
     {
         fejlecJ.innerHTML = "Naa, komolyan"
-        KozepKepJ.src = "/Kepek/CecaDiss.png"
+        KozepKepJ.src = "./Kepek/CecaDiss.png"
         KozepszovegJ.innerHTML = "A születésnapood!"
     }
     else
     {
         fejlecJ.innerHTML = "Háát, nah"
-        KozepKepJ.src = "/Kepek/CecaHappy1.jpg"
+        KozepKepJ.src = "./Kepek/CecaHappy1.jpg"
         KozepszovegJ.innerHTML = "A SZÜLINAPOOOD!!"
     }
     delay(2000).then(() => UzenetPing());
@@ -427,7 +423,7 @@ let hosszuJ = document.getElementById("Hosszuszoveg")
 function UziMegnyi2F(){
     KozepKepJ.style.display = "inline"
     KozepKepJ.style.animation = "Entry2 0.4s forwards"
-    KozepKepJ.src = "/Kepek/hellokittycake.png"
+    KozepKepJ.src = "./Kepek/hellokittycake.png"
 
     KozepszovegJ.style.display = "inline"
     KozepszovegJ.innerHTML = "BOLDOG SZÜLETÉSNAPOOT!"
