@@ -93,6 +93,7 @@ function Szius(){
     KozepszovegJ.style.fontSize = "10vw"
     KozepszovegJ.style.transition = "0s"
     KozepKepJ.src = "./Kepek/CecaHappy.jpg"
+    KozepKepJ.style.height = "80vw"
     KozepKepJ.style.animation = "Entry 0.2s forwards"
     Gomb01J.style.display = "none"
     Gomb02J.style.display = "none"
@@ -129,7 +130,7 @@ function bejovo3(){
     SliderJ.max = "10"
     SliderJ.value = "5"
     SliderJ.style.width = "80%"
-    SliderJ.style.height = "100%"
+    SliderJ.style.height = "100vw"
     SliderJ.style.outline = "none"
   
     CsuszkaJ.style.display = "block"  
