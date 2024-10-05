@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Fanncsiii meglepi</title>
+    <link rel="icon" type="image/x-icon" href="/Kepek/Favicon.png">
+</head>
+<body>
+    <div class="uziDiv" onclick="UziMegnyitF()">
+        <p id="uziP">
+            1
+        </p>
+    </div>
+    <div class="keret">
+        <div class="belsoVaz">
+            <p id="fejlec">!ÁLLJ!</p>
+
+            <div onclick="KepkattingF()">
+                <img src="/Kepek/CecaPuska.jpg" id="KozepKep" alt="">
+            </div>
+
+            <p id="Kozepszoveg">Faanncsii vagy?!</p>
+            <hr id="hr">
+            <p id="Alszoveg">Hogy érzed magad ma?</p>
+            <p id="Alszoveg0">(Rossztól, jóig)</p>
+            <p id="Hosszuszoveg">
+                Szia! Úgy gondoltam, mivel úgy se találkozunk, meg úgy sincs pénzem, megpróbállak meglepni egy ilyennel <br>
+                Nem lett olyan tökéletes mint terveztem, de ez szerintem leírja rengeteg tevékenységem feléd irányítva-<br>
+                Lehet nem tudom átadni mindig a legjobbat számodra, de megígérem, hogy mindig arra törekszem!<br>
+                Több olyan nap is volt amikor első gondolataim közé tartozott, hogy mi van veled, különösen ma!<br>
+                Egy remek emberre leltem benned, és nagyon nagyon örülök, hogy ismerhetlek!!<br>
+                Egy szó mint száz, boldog születésnapot Fanccsi, remélem sikerült azért egy mosolyt csalni az arcodra :>
+            </p>
+
+            
+            <div id="CsuszkaDiv">
+               <p></p>
+               <!--- <input type="range" min="1" max="100" value="50" class="slider" id="CsuszkaID"> !--->
+               <input type="range" min="1" max="99" value="50" class="slider" id="CsuszkaID">
+            </div>
+            <div id="DatumDiv">
+                <input type="text" name="" id="DatumID" placeholder="Ide írd le kérlek">
+            </div>
+
+
+            <div class="GombokDiV">
+                <button onclick="Gomb01F(0);" id="Gomb01">
+                    Igen
+                </button>
+                
+                <button onclick="Gomb01F(1);" id="Gomb02">
+                    Nem 
+                </button>
+                
+                <button onclick="Gomb02F()" id="Gomb03">
+                    Így
+                </button>
+                <button onclick="Gomb03F()" id="Gomb04">
+                    Valami ilyesmi
+                </button>
+            </div>             
+            <p id="SzamlaloSzoveg">0</p>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
