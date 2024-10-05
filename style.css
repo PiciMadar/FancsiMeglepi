@@ -1,9 +1,10 @@
 
 
-body{
+html, body{
     margin: 0 auto;
     font-family: cursive;
     background-color: rgb(233, 221, 236);
+    height: 10%;
 }
 
 
@@ -165,7 +166,7 @@ p{
 
 img{
     width: 80%;
-    height: 800px;
+    height: 100%;
     border-radius: 2px;
     border-width: 20px;
     border-style: solid;
